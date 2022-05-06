@@ -1,0 +1,9 @@
+.side-nav{
+    padding: 15px;
+}
+.side-nav ul li{
+    padding: 5px 10px;
+}
+.side-nav ul li a{
+    color: #182C2B;
+}

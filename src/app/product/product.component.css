@@ -1,0 +1,21 @@
+.product-sec{
+    padding: 20px;
+}
+.product img{
+    width: 330px;
+    height: 190px;
+}
+.price, .cart-btn{
+    padding: 10px 10px;
+    width: 100%;
+}
+
+.cart-btn a{
+    padding: 5px;
+    width: 100%;
+    background: #182c2b;
+    color: #fff;
+    border: 1px solid #182c2b;
+    border-radius: 7px;
+    text-decoration: none;
+}

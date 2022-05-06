@@ -1,0 +1,14 @@
+<div class="product-sec">
+    <h3 class="mb-4">{{title}}</h3>
+    <div class="row product ">
+        <div class="col-md-4 mb-4" *ngFor="let product of products">
+            <img src="{{product.thumbnail}}" alt="">
+            <div class="price d-flex">
+                <label for="">{{product.title}}</label><span>/ <b>{{product.price  | currency:"INR"}}</b></span>
+            </div>
+            <div class="cart-btn">
+                <a class="btn btn-large" [routerLink]="['/cart', { id:product.id }]">Add to cart</a>
+            </div>
+        </div>
+    </div>
+</div>

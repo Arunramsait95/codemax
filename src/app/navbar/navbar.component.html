@@ -1,0 +1,8 @@
+<div class="side-nav">
+    <h5>{{title}}</h5>
+    <ul class="nav flex-column">
+        <li *ngFor="let path of paths"  class="nav-item">
+            <a class="nav-link active p-2   " routerLink="{{path.url}}">{{path.name}}</a>
+        </li>
+    </ul>
+</div>

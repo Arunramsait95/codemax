@@ -1,0 +1,37 @@
+<div class="container go-login">
+<div class="form__container form__container-register">
+    <form class="form" action="" [formGroup]="angForm" (ngSubmit)="postdata(angForm)" autocomplete="off">
+        <div *ngIf="message" class="alert alert-danger">
+            <p>{{message}}</p>
+        </div>
+        <h3 class="form__heading">Create Account</h3>
+        <div class="field">
+            <input type="email" formControlName="email" required name="email" autocomplete="off" id="email">
+            <label for="email" title="Email" data-title="Email"></label>
+        </div>
+        <div class="field mt-3">
+            <input type="text" formControlName="username"  name="username" required autocomplete="off" id="username">
+            <label for="Username" title="User Name" data-title="User Name"></label>
+        </div>
+        <div class="row mt-3">
+            <div class="col-md-12 col-sm-12">
+                <div class="field">
+                    <input type="password" formControlName="password" name="password" required autocomplete="off" id="password">
+                    <label for="password" title="Password" data-title="Password"></label>
+                </div>
+            </div>
+        </div>
+        <button type="submit" class="btn btn--main mt-2" name="signup">Sign Up</button>
+    </form> 
+</div>
+<!-- Overlay container Starts -->
+<div class="overlay-container">
+    <!-- Right Overlay Starts -->
+    <div class="overlay overlay--left">
+        <img src="assets/register.png" width="108px">
+        <p class="overlay__desc">One Account, Will change your Buisness</p>
+        <a routerLink="/login" id="go-login" class="btn btn--main-outline">Sign In</a>
+    </div>
+    <!-- Right Overlay Ends -->
+</div>
+<!-- Overlay Container Ends -->
