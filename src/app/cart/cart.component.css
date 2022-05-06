@@ -78,13 +78,9 @@ span.circle{
 .content-sec{
     width: 100%;
 }
-.circle{
-    width: 20px;
-    height: 20px;
-    background-color: red;
-    border-radius: 50%;
-    color: #fff;
-    text-decoration: none;
+a i{
+    color: red;
+    cursor: pointer;
 }
 .cart{
     position: relative;
